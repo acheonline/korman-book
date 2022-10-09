@@ -69,3 +69,16 @@ func Merge(arMain, l, r []int, left, right int) { // O(n)
 		j++
 	}
 }
+
+func InsertionSort(x []int) {
+	var i, key int                //O(0)
+	for j := 0; j < len(x); j++ { //O(n2)
+		key = x[j]                             //O(0)
+		for i = j - 1; i >= 0 && x[i] > key; { //O(n)
+			//to make desc insertion sort you have to check 'x[i] < key' condition in loop
+			x[i+1] = x[i] //O(0)
+			i--           //O(0)
+			x[i+1] = key  //O(0)
+		}
+	}
+}
