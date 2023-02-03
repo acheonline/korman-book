@@ -6,7 +6,6 @@ func main() {
 	fmt.Println("actual:", rob([]int{1, 2, 3, 1}), ",expected: 4")
 	fmt.Println("actual:", rob([]int{2, 7, 9, 3, 1}), ",expected: 12")
 	fmt.Println("actual:", rob([]int{2, 1, 1, 2}), ",expected: 4")
-
 }
 
 func rob(nums []int) int {
