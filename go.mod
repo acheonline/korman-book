@@ -1,3 +1,3 @@
 module kormen-book
 
-go 1.19
+go 1.20
